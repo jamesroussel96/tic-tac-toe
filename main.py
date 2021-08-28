@@ -7,12 +7,13 @@ game_values = ['-', 'O', 'X']
 
 global game_board
 
+# All possible game board positions expressed as key value pairs
 game_board = {'top_left': game_values[0], 'top_middle': game_values[0], 'top_right': game_values[0],
               'left': game_values[0], 'middle': game_values[0], 'right': game_values[0], 'bottom_left': game_values[0],
               'bottom_middle': game_values[0], 'bottom_right': game_values[0]}
 
 def board():
-
+# Visual representation of game board 
     print('|', game_board['top_left'], '|', game_board['top_middle'], '|', game_board['top_right'],  '|\n'
           '|', game_board['left'], '|', game_board['middle'], '|', game_board['right'],  '|\n'
           '|', game_board['bottom_left'], '|', game_board['bottom_middle'], '|', game_board['bottom_right'],  '|\n'
